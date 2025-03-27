@@ -11,7 +11,8 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
-                    "ts_ls"
+                    "ts_ls",
+                    "marksman"
                 }
             })
         end
@@ -41,6 +42,9 @@ return {
                 on_attach = on_attach
             })
             lspconfig.ts_ls.setup({
+                on_attach = on_attach
+            })
+            lspconfig.marksman.setup({
                 on_attach = on_attach
             })
         end
