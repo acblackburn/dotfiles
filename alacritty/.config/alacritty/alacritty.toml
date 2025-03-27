@@ -1,0 +1,17 @@
+import = [
+  "~/.config/alacritty/themes/themes/tokyo_night.toml"
+]
+
+live_config_reload = true
+
+[font]
+normal = { family = "JetBrainsMono NF", style = "Regular" }
+bold = { family = "JetBrainsMono NF", style = "Bold" }
+italic = { family = "JetBrainsMono NF", style = "Italic" }
+bold_italic = { family = "JetBrainsMono NF", style = "Bold Italic" }
+size = 15.0
+
+[window]
+startup_mode = "Fullscreen"
+option_as_alt = "Both"
+blur = true
