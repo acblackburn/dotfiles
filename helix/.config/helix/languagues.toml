@@ -1,0 +1,7 @@
+[[language]]
+name = "json"
+auto-format = false
+
+[[language]]
+name = "typescript"
+auto-format = false
