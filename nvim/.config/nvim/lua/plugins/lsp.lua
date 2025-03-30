@@ -21,10 +21,12 @@ return {
         "neovim/nvim-lspconfig",
         dependencies = {
             "nvim-telescope/telescope.nvim",
+            "saghen/blink.cmp",
         },
         config = function()
             local lspconfig = require("lspconfig")
             local telescope = require("telescope.builtin")
+            local capabilities = require('blink.cmp').get_lsp_capabilities()
 
              -- Define keymaps for LSP features
             local on_attach = function()
@@ -39,13 +41,16 @@ return {
 
             -- Setup LSP servers with the keymaps
             lspconfig.lua_ls.setup({
-                on_attach = on_attach
+                on_attach = on_attach,
+                capabilities = capabilities
             })
             lspconfig.ts_ls.setup({
-                on_attach = on_attach
+                on_attach = on_attach,
+                capabilities = capabilities
             })
             lspconfig.marksman.setup({
-                on_attach = on_attach
+                on_attach = on_attach,
+                capabilities = capabilities
             })
         end
     }

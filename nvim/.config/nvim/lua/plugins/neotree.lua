@@ -9,6 +9,7 @@ return {
   lazy = false,
   opts = {},
   config = function()
-    vim.keymap.set('n', '<leader>n', ':Neotree toggle<CR>', { desc = "Toggle Neo-Tree" })
+    vim.keymap.set('n', '<leader>n', ':Neotree toggle<CR>', { desc = "Toggle Neo-Tree", noremap = true, silent = true })
+    vim.keymap.set('n', '<leader>m', ':Neotree focus<CR>', { desc = "Focus Neo-Tree", noremap = true, silent = true })
   end
 }
