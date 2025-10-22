@@ -1,0 +1,23 @@
+let mapleader=" "
+
+" Clipboard
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+" Edit/reload .ideavimrc
+nnoremap e :e ~/.ideavimrc<CR>
+nnoremap r :action IdeaVim.ReloadVimRc.reload<CR>
+
+" Zen mode
+nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
+
+" Which-Key
+set which-key
+set notimeout
+
+map <Leader>ff <action>(com.mituuz.fuzzier.Fuzzier)
+map <Leader>fm <action>(com.mituuz.fuzzier.FuzzyMover)
+map <Leader>fv <action>(com.mituuz.fuzzier.FuzzierVCS)
+map <Leader>fg <action>(com.mituuz.fuzzier.FuzzyGrep)
+
+nnoremap <leader>b :action ShowNavBar<CR>
