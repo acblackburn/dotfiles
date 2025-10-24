@@ -51,3 +51,7 @@ theme = TokyoNight
 font-size = 14
 keybind = global:cmd+backquote=toggle_quick_terminal
 
+window-padding-x = 5
+window-padding-y = 5
+window-padding-balance = true
+
