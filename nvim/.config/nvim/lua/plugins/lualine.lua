@@ -4,6 +4,7 @@ return {
     config = function()
         require('lualine').setup({
             extensions = { 'neo-tree' },
+            theme = 'ayu'
         })
     end
 }
